@@ -1,0 +1,156 @@
+@import url('colors.css');
+@import url('fonts.css');
+@import url('custom_reset.css');
+@import url('helpers.css');
+@import url('shared/form.css');
+@import url('shared/button.css');
+/* @import url('media.css'); */
+
+:root {
+  --border-radius: 4px;
+}
+
+/* common */
+
+.common-layout {
+  background-image: url(../assets/img/bg_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-input {
+  background-color: white;
+  min-width: 200px;
+  padding-left: 16px;
+  padding-right: 40px;
+  border-radius: var(--border-radius);
+}
+
+.link {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 960px;
+  gap: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 34px;
+}
+
+.header__form {
+  display: flex;
+  gap: 12px;
+}
+
+.header__form-input {
+  height: 40px;
+}
+
+/* main */
+
+.main {
+  padding-top: 224px;
+}
+
+.container {
+  max-width: 864px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.main__title {
+  font-size: 38px;
+  font-family: 'Proxima-Nova';
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.main__title--white {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.main__title--highlighted {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.alert-message {
+  display: block;
+  border-radius: var(--border-radius);
+  background-color: var(--alert-message-bg);
+  text-align: center;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.alert-message---hide {
+  display: none;
+}
+
+.alert-message--sm {
+  height: 35px;
+  font-size: 11px;
+  line-height: 35px;
+}
+
+.alert-message--md {
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.main-pagination {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  column-gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-pagination__item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.main-pagination__item--filled {
+  background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .header__form {
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .main {
+    padding-top: 60px;
+  }
+}

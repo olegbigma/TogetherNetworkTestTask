@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>StarCompany</title>
+</head>
+<body class="common-layout">
+  <header class="header">
+    <a href="#">
+      <img class="header__logo" src="/assets/img/logo.png" alt="Star Company logo">
+    </a>
+    <form action="" class="header__form">
+      <div>
+        <input placeholder="Email" type="email" class="main-input header__form-input">
+        <span class="alert-message alert-message--sm">Please enter a valid email address</span>
+      </div>
+      <div>
+        <input placeholder="Password" type="password" class="main-input header__form-input">
+        <a class="link d-block mt-12" href="#">Forgot your password?</a>
+      </div>
+      <button class="main-btn">Log in</button>
+    </form>
+  </header>
+  <main class="main">
+    <div class="container">
+      <h1 class="main__title"><span class="main__title--highlighted">StarCompany DESIGNS, MANUFACTURES AND</span> <span class="main__title--white">Launches Advanced Rockets and  Spacecrafts</span></h1>
+      <form action="" class="slider" novalidate>
+<!--        Role step-->
+        <div class="main__form" id="roleStep" data-next-step="#yourAge">
+          <div class="main__form-btn-wrapper main__form-btn-wrapper--left">
+            <a href="#roleStep" class="main__form-back-btn"></a>
+          </div>
+          <div class="main__form-middle">
+            <details class="main__form-dropdown">
+              <input type="hidden" name="role">
+              <summary class="main__form-dropdown-btn" role="button">
+                <span class="main__form-title">Who are you?</span>
+                <span class="main-input main__form-input main__form-dropdown-input">Engineer</span>
+              </summary>
+              <ul class="main__form-dropdown-list">
+                <li class="main__form-dropdown-list-item">Engineer</li>
+                <li class="main__form-dropdown-list-item">Business Development Executive</li>
+                <li class="main__form-dropdown-list-item">Office Manager/PA</li>
+                <li class="main__form-dropdown-list-item">Accountant</li>
+                <li class="main__form-dropdown-list-item">VR Designer</li>
+              </ul>
+            </details>
+            <span class="alert-message alert-message--md alert-message---hide"></span>
+
+          </div>
+
+          <div class="main__form-btn-wrapper">
+            <a href="#yourAge" class="main-btn main__next-btn">Next Step</a>
+          </div>
+        </div>
+
+<!--        Age step-->
+        <div class="main__form" id="yourAge" data-next-step="#address">
+          <div class="main__form-btn-wrapper main__form-btn-wrapper--left">
+            <a href="#roleStep" class="main__form-back-btn"></a>
+          </div>
+          <div class="main__form-middle">
+            <details class="main__form-dropdown">
+              <input type="hidden" name="age">
+              <summary class="main__form-dropdown-btn">
+                <span class="main__form-title">What is your age</span>
+                <span class="main-input main__form-input main__form-dropdown-input">Engineer</span>
+              </summary>
+              <ul class="main__form-dropdown-list">
+                <li class="main__form-dropdown-list-item">18</li>
+                <li class="main__form-dropdown-list-item">19</li>
+                <li class="main__form-dropdown-list-item">20</li>
+                <li class="main__form-dropdown-list-item">21</li>
+                <li class="main__form-dropdown-list-item">22</li>
+              </ul>
+            </details>
+            <span class="alert-message alert-message--md alert-message---hide"></span>
+          </div>
+          <div class="main__form-btn-wrapper">
+            <a href="#address" class="main-btn main__next-btn">Next Step</a>
+          </div>
+        </div>
+
+<!--        Address step-->
+        <div action="" class="main__form main__form-selected" id="address" data-next-step="#email">
+
+          <div class="main__form-btn-wrapper main__form-btn-wrapper--left">
+            <a href="#yourAge" class="main__form-back-btn"></a>
+          </div>
+          <div class="main__form-middle">
+            <div class="main__form-dropdown-btn" role="button">
+              <span class="main__form-title">I am from</span>
+              <input type="text" placeholder="Input your address" class="main-input main__form-input" name="address">
+            </div>
+            <span class="alert-message alert-message--md alert-message---hide"></span>
+
+            <p class="main__form-desc">E.g.: New Roads or 70760 <br />
+              We don’t use postal addresses to contact members directly!
+            </p>
+          </div>
+
+          <div class="main__form-btn-wrapper">
+            <a href="#email" class="main-btn main__next-btn">Next Step</a>
+          </div>
+        </div>
+
+<!--        Email step-->
+        <div action="" class="main__form main__form-selected" id="email" data-next-step="#password">
+
+          <div class="main__form-btn-wrapper main__form-btn-wrapper--left">
+            <a href="#address" class="main__form-back-btn"></a>
+          </div>
+          <div class="main__form-middle">
+            <div class="main__form-dropdown-btn" role="button">
+              <span class="main__form-title">Your email address</span>
+              <input type="email" placeholder="Input your email" class="main-input main__form-input" name="email">
+            </div>
+            <span class="alert-message alert-message--md alert-message---hide"></span>
+
+          </div>
+
+          <div class="main__form-btn-wrapper">
+            <a href="#password" class="main-btn main__next-btn">Next Step</a>
+          </div>
+        </div>
+
+<!--        Password step-->
+        <div action="" class="main__form main__form-selected" id="password">
+          <div class="main__form-btn-wrapper main__form-btn-wrapper--left">
+            <a href="#email" class="main__form-back-btn"></a>
+          </div>
+          <div class="main__form-middle">
+            <div class="main__form-dropdown-btn" role="button">
+              <span class="main__form-title">Create your password</span>
+              <input type="password" name="password" placeholder="Enter your password" class="main-input main__form-input">
+            </div>
+            <span class="alert-message alert-message--md alert-message---hide"></span>
+
+            <p class="main__form-desc">E.g.: New Roads or 70760 <br />
+              We don’t use postal addresses to contact members directly!
+            </p>
+
+          </div>
+
+          <div class="main__form-btn-wrapper">
+            <button type="submit" class="main-btn main__start-btn">Start now</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="main-pagination">
+        <a href="#roleStep" class="main-pagination__item main-pagination__item--filled"></a>
+        <a href="#yourAge" class="main-pagination__item"></a>
+        <a href="#address" class="main-pagination__item"></a>
+        <a href="#email" class="main-pagination__item"></a>
+        <a href="#password" class="main-pagination__item"></a>
+      </div>
+    </div>
+  </main>
+  <script src="src/script.js" type="module"></script>
+</body>
+</html>
